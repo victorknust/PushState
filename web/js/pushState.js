@@ -16,6 +16,10 @@ var PushState = function (contentElement) {
                 if (! href) {
                     return;		
                 }
+                // if they are remote URLs ignore them
+                if (href.match(/^\///) || href.match(/^[^:]+:\/\//) {
+                    return;
+                }
                 e.preventDefault();
 
                 console.log('Redirect to', href);
