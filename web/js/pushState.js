@@ -17,7 +17,7 @@ var PushState = function (contentElement) {
                     return;		
                 }
                 // if they are remote URLs ignore them
-                if (href.match(/^\/\//) || href.match(/^[^:]+:\/\//) {
+                if (href.match(/^\/\//) || href.match(/^[^:]+:\/\//)) {
                     return;
                 }
                 e.preventDefault();
